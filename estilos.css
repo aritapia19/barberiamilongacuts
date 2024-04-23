@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Reset de estilos para limpiar estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #141414;
+}
+
+/* Estilo para el encabezado */
+.header {
+    background-color: #141414;
+    color: #ce967b;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Estilo para el título del encabezado */
+.header__title {
+    margin: 0;
+    font-size: 48px;
+}
+
+/* Estilo para la navegación */
+.header__nav {
+    margin-top: 20px;
+}
+
+.header__nav-list {
+    list-style-type: none;
+}
+
+.header__nav-item {
+    display: inline;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.header__nav-link:hover {
+    color: #ce967b;
+}
+
+.main {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url('img/barber\ fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__row {
+    display: flex;
+    margin-bottom: 40px;/
+}
+
+.main__image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.main__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.main__title {
+    padding-bottom: 20px;
+    color: #ce967b;
+    text-transform: uppercase;
+}
+
+.main__subtitle {
+    padding-bottom: 6px;
+}
+
+.main__text {
+    flex: 2;
+    color: beige;
+}
+
+.main__text h2 h3 {
+    text-transform: uppercase;
+}
+
+.main__services {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los elementos horizontalmente */
+}
+
+.main__service {
+    flex: 1;
+    /* Cada servicio ocupará el mismo espacio horizontalmente */
+    margin-right: 20px;
+    /* Espacio entre cada servicio */
+}
+
+.main__service:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último elemento */
+}
+
+.main__service img {
+    max-width: 100%;
+    /* Asegura que las imágenes se ajusten al contenedor */
+    height: auto;    
+}
+
+.footer {
+    background-color: #141414;
+    /* Color de fondo */
+    color: #ce967b;
+    /* Color del texto */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__content {
+    max-width: 600px;
+    /* Ancho máximo del contenido del footer */
+    margin: 0 auto;
+    /* Centra el contenido horizontalmente */
+}
+
+.footer h2 {
+    font-size: 24px;
+    /* Tamaño del título */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+}
+
+.footer ul {
+    list-style: none;
+    /* Quita los estilos de la lista */
+    padding: 0;
+    /* Quita el relleno de la lista */
+}
+
+.footer ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para pantallas más pequeñas que 768px */
+@media only screen and (max-width: 768px) {
+
+    /* Ajustes de estilos para el encabezado */
+    .header {
+        padding: 10px;
+    }
+
+    .header__title {
+        font-size: 36px;
+    }
+
+    /* Ajustes de estilos para la navegación */
+    .header__nav {
+        margin-top: 10px;
+    }
+
+    .header__nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .header__nav-link {
+        display: block;
+        margin: 0;
+    }
+
+    /* Ajustes de estilos para el contenido principal */
+    .main__row {
+        flex-direction: column;
+    }
+
+    .main__image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main__text {
+        text-align: center;
+    }
+
+    .main__services {
+        flex-direction: column;
+        /* Apila los elementos verticalmente en dispositivos pequeños */
+    }
+
+    .main__service {
+        margin-right: 0;
+        /* Elimina el margen entre servicios en dispositivos pequeños */
+        margin-bottom: 20px;
+        /* Agrega espacio entre servicios apilados */
+    }
+}
+
+/* Ajustes de estilos para el footer */
+.footer__content {
+    max-width: 100%;
+}
